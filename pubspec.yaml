@@ -96,7 +96,10 @@ flutter:
   # see https://flutter.dev/custom-fonts/#from-packages
 
 flutter_launcher_icons:
-  android: "launcher_icon"
-  ios: true
   image_path: "assets/icon/icon.png"
+  android: "launcher_icon"
+  icon: false
+  adaptive_icon_foreground: "assets/icon/icon.png" # Set the foreground image (same or different from image_path)
+  adaptive_icon_background: "#e7e4f0"
   remove_alpha_ios: true
+  min_sdk_android: 21

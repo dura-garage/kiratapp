@@ -15,4 +15,14 @@ class LocaleProvider extends ChangeNotifier {
     _locale = Locale('en'); // Reset to default
     notifyListeners();
   }
+
+  void toggleLocale(){
+    if(_locale==Locale("en")){
+      _locale=Locale("ne");
+    }
+    else{
+      _locale=Locale("en");
+    }
+    notifyListeners();
+  }
 }
